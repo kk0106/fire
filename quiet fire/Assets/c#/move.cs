@@ -25,14 +25,15 @@ public class move : MonoBehaviour
     {
        
 
+        
+    }
+    private void FixedUpdate()
+    {
         Vector3 movedir = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")).normalized;
         moveamount = movedir * speed * Time.deltaTime;
 
         Quaternion targetRot = Quaternion.FromToRotation(transform.forward, movedir) * transform.rotation;
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRot, rotate * Time.deltaTime);
-    }
-    private void FixedUpdate()
-    {
         rb.MovePosition(rb.position + moveamount);
     }
 
