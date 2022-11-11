@@ -42,5 +42,9 @@ public class changescene : MonoBehaviour
         {
             SceneManager.LoadScene(other.gameObject.GetComponent<sceneinfo5>().scenename);
         }
+        if (other.gameObject.name == "room1")
+        {
+            SceneManager.LoadScene(other.gameObject.GetComponent<sceneinfo6>().scenename);
+        }
     }
 }

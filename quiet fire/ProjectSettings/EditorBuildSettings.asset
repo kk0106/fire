@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/2f corridor.unity
     guid: 30787b3a7b01f1b4d845a6c34de6f7ef
   - enabled: 1
+    path: Assets/Scenes/room1.unity
+    guid: cde145f9686b6f947ae508d117ee876a
+  - enabled: 1
     path: Assets/Scenes/room6-1.unity
     guid: e68b278321c9c8048922e73a0796592a
   - enabled: 1
@@ -29,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/room8.unity
     guid: 6bf070a088fb5164d92de2136a8ec501
+  - enabled: 1
+    path: Assets/Scenes/1f corridor.unity
+    guid: e740981b2fa576942a9a911aaa9ab261
   m_configObjects: {}
