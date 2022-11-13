@@ -7,7 +7,7 @@ public class move : MonoBehaviour
     private CharacterController controller;
     public float speed = 10f;
     public float rotspeed = 1f;
-    public float jumpspeed = 1f;
+   // public float jumpspeed = 1f;
    
     // Start is called before the first frame update
     void Start()
@@ -32,11 +32,11 @@ public class move : MonoBehaviour
         transform.Rotate(Vector3.up, Horizontal * rotspeed);
 
      
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                var jump = transform.up * jumpspeed *Horizontal* Time.deltaTime;
-                controller.Move(jump);
-            }
+            //if (Input.GetKeyDown(KeyCode.Space))
+            //{
+              //  var jump = transform.up * jumpspeed *Horizontal* Time.deltaTime;
+               // controller.Move(jump);
+            //}
         
     }
 }
