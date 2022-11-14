@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class light : MonoBehaviour
 {
-    Vector3 v1;
+   // Vector3 v1;
     public GameObject b;
+    public GameObject pointlight;
     
     
 
     // Start is called before the first frame update
     void Start()
     {
-        v1 = b.gameObject.transform.position;
+        pointlight.SetActive(false);
+       // v1 = b.gameObject.transform.position;
     }
 
     // Update is called once per frame
@@ -28,11 +30,16 @@ public class light : MonoBehaviour
        // }
 
     }
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision other)
     {
-        if (collision.gameObject.name == "ghost")
+        if (other.gameObject.tag == "1")
        {
-            b.gameObject.GetComponent<Renderer>().material.color = new Color(231, 82, 82, 0);
+           // b.gameObject.GetComponent<Renderer>().material.color = new Color(0,0,10,10);
+            pointlight.SetActive(true);
+        }
+        else
+        {
+            Debug.Log("none");
         }
     }
 }
