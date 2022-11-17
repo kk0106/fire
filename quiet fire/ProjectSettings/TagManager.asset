@@ -15,6 +15,7 @@ TagManager:
   - l2
   - l3
   - l4
+  - room1
   layers:
   - Default
   - TransparentFX

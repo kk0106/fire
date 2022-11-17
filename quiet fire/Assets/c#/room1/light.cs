@@ -7,6 +7,7 @@ public class light : MonoBehaviour
    // Vector3 v1;
     public GameObject b;
     public GameObject pointlight;
+
     
     
 
@@ -14,28 +15,24 @@ public class light : MonoBehaviour
     void Start()
     {
         pointlight.SetActive(false);
-       // v1 = b.gameObject.transform.position;
+       
+       
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        //if (Input.GetKey(KeyCode.F))
-       // {
-
-         //   b.gameObject.GetComponent<Renderer>().material.color = new Color(231, 82, 82, 0);
-
-
-       // }
+        
 
     }
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.tag == "1")
        {
-           // b.gameObject.GetComponent<Renderer>().material.color = new Color(0,0,10,10);
+     
             pointlight.SetActive(true);
+           
         }
         else
         {

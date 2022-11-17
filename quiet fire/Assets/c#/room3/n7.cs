@@ -11,11 +11,14 @@ public class n7 : MonoBehaviour
     public GameObject garlic;
     public GameObject tomoto;
     public GameObject wine;
+    public GameObject doorrrom4;
+    //public GameObject dorridor;
     int a;
     // Start is called before the first frame update
     void Start()
     {
-        
+        doorrrom4.SetActive(false);
+       // dorridor.SetActive(false);
     }
 
     // Update is called once per frame
@@ -35,6 +38,7 @@ public class n7 : MonoBehaviour
         if (other.gameObject.tag == "fire" && a == 1)
         {
             wine.SetActive(false);
+            doorrrom4.SetActive(true);
         }
         else
         {
