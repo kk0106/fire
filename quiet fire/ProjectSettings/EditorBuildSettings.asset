@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/room2.unity
     guid: a9c69f6720dd3b8418c88ce841692429
   - enabled: 1
+    path: Assets/Scenes/panel/how to play.unity
+    guid: a74446308d636d94ebb211ec09936b0e
+  - enabled: 1
     path: Assets/Scenes/room3.unity
     guid: 1e6535d93ea61164ea50731b6b542ed3
   - enabled: 1
@@ -44,4 +47,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/room8.unity
     guid: 6bf070a088fb5164d92de2136a8ec501
+  - enabled: 1
+    path: Assets/Scenes/panel/start.unity
+    guid: 9796e40d90d3c6042a4fd4995c0134e2
+  - enabled: 1
+    path: Assets/Scenes/panel/credit.unity
+    guid: 7a911cf384fe3c545bf524f5b3a0c704
   m_configObjects: {}
