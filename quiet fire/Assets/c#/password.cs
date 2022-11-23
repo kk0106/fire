@@ -26,8 +26,8 @@ public class password : MonoBehaviour
         }
         if (opendoor == true)
         {
-            var newrot = Quaternion.RotateTowards(doorhinge.rotation, Quaternion.Euler(0.0f, -90.0f, 0.0f), Time.deltaTime * 250);
-            doorhinge.rotation = newrot;
+
+            Destroy(this.gameObject);
         
         }
     }

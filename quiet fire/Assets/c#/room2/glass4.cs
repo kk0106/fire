@@ -8,13 +8,13 @@ public class glass4 : MonoBehaviour
     public GameObject pointlight1;
     public GameObject pointlight2;
     public GameObject pointlight3;
-    public GameObject door2;
+    //public GameObject door2;
     int a;
     // Start is called before the first frame update
     void Start()
     {
         pointlight3.SetActive(false);
-        door2.SetActive(false);
+       // door2.SetActive(false);
     }
 
     // Update is called once per frame
@@ -34,7 +34,7 @@ public class glass4 : MonoBehaviour
         if (other.gameObject.tag == "fire" && a == 1)
         {
             pointlight3.SetActive(true);
-            door2.SetActive(true);
+           // door2.SetActive(true);
         }
         if (a == 0)
         {

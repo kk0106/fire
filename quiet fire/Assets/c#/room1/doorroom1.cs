@@ -19,10 +19,14 @@ public class doorroom1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (pointlight.activeSelf)
+        if (pointlight.activeInHierarchy&&pointlight1.activeInHierarchy&&pointlight2.activeInHierarchy&&pointlight3.activeInHierarchy)
         {
 
             door_1.SetActive(true);
+        }
+        else
+        {
+            door_1.SetActive(false);
         }
        
 

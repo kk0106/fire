@@ -5,10 +5,14 @@ using UnityEngine;
 public class r3light : MonoBehaviour
 {
     public GameObject pointlight;
+    int a = 0;
+   
     // Start is called before the first frame update
     void Start()
     {
         pointlight.SetActive(false);
+       
+        
     }
 
     // Update is called once per frame
@@ -21,6 +25,8 @@ public class r3light : MonoBehaviour
         if (other.gameObject.tag == "fire")
         {
             pointlight.SetActive(true);
+           
+            
         }
     }
 }

@@ -62,5 +62,6 @@ public class changescene : MonoBehaviour
         {
             SceneManager.LoadScene(other.gameObject.GetComponent<sceneinfo10>().scenename);
         }
+       
     }
 }
