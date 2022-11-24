@@ -2,22 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class dooooe : MonoBehaviour
+public class aa : MonoBehaviour
 {
-    public GameObject pointlight;
-    public GameObject dooor;
+    public GameObject plight;
     // Start is called before the first frame update
     void Start()
     {
-        dooor.SetActive(false);
+        plight.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (pointlight.activeInHierarchy)
+        
+    }
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.tag == "fire")
         {
-            dooor.SetActive(true);
+            plight.SetActive(true);
         }
     }
 }

@@ -16,6 +16,7 @@ TagManager:
   - l3
   - l4
   - room1
+  - doorroom4
   layers:
   - Default
   - TransparentFX

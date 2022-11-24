@@ -1,26 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Video;
+using UnityEngine.SceneManagement;
 
-public class l : MonoBehaviour
+
+public class video : MonoBehaviour
 {
-    public GameObject pl;
+    VideoPlayer playvideo = new VideoPlayer();
+    public GUI UI;
     // Start is called before the first frame update
     void Start()
     {
-        pl.SetActive(false);
+        playvideo = GetComponent<VideoPlayer>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         
-    }
-    private void OnCollisionEnter(Collision other)
-    {
-        if(other.gameObject.tag == "fire")
-        {
-            pl.SetActive(true);
-        }
     }
 }

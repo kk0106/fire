@@ -2,23 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class value : MonoBehaviour
+public class cc : MonoBehaviour
 {
-    public static int clear;
     public GameObject door;
+    public GameObject plight;
+    public GameObject plight1;
     // Start is called before the first frame update
     void Start()
     {
-        
+        door.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (door.activeInHierarchy)
+        if (plight.activeInHierarchy&&plight1.activeInHierarchy)
         {
-            clear = 1;
-        }
-        DontDestroyOnLoad(door.gameObject);
+            door.SetActive(true);
+        }   
     }
+
 }

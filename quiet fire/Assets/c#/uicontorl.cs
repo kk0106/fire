@@ -30,6 +30,11 @@ public class uicontorl : MonoBehaviour
     }
     public void play()
     {
+        SceneManager.LoadScene("story");
+    }
+
+    public void playgame()
+    {
         SceneManager.LoadScene("1f");
     }
    

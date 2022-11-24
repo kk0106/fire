@@ -2,17 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class r3light : MonoBehaviour
+public class bb : MonoBehaviour
 {
-    public GameObject pointlight;
-    int a = 0;
-   
+    public GameObject plight;
+    public static int a;
     // Start is called before the first frame update
     void Start()
     {
-        pointlight.SetActive(false);
-       
-        
+        plight.SetActive(false);
     }
 
     // Update is called once per frame
@@ -24,9 +21,8 @@ public class r3light : MonoBehaviour
     {
         if (other.gameObject.tag == "fire")
         {
-            pointlight.SetActive(true);
-           
-            
+            plight.SetActive(true);
+            a = 1;
         }
     }
 }
