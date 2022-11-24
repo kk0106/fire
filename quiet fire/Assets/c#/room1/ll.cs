@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class light : MonoBehaviour
+public class ll : MonoBehaviour
 {
    // Vector3 v1;
     public GameObject b;
