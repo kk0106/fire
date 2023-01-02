@@ -4,39 +4,38 @@ using UnityEngine;
 
 public class move : MonoBehaviour
 {
-    private CharacterController controller;
-    public float speed = 10f;
-    public float rotspeed = 1f;
-   // public float jumpspeed = 1f;
-   
+    private CharacterController character;
+    public Transform cam;
+
+    public float speed = 7f;
+
+    public float turnSmoothTime = 0.1f;
+
+
+    float turnSmoothVelocity;
+
     // Start is called before the first frame update
     void Start()
     {
-        controller=transform.GetComponent<CharacterController>();
+        character = transform.GetComponent<CharacterController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        movelikewow();
-       // Vector3 move= new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        //characterController.Move(move * Time.deltaTime * speed);
-    }
-    private void movelikewow()
-    {
-        var Horizontal = Input.GetAxis("Horizontal");
-        var Vertical = Input.GetAxis("Vertical");
+        float Horizontal = Input.GetAxis("Horizontal");
+        float Vertical = Input.GetAxis("Vertical");
+        Vector3 direction = new Vector3(Horizontal, 0f, Vertical).normalized;
 
-        var move1 = transform.forward * speed *Vertical* Time.deltaTime;
-        controller.Move(move1);
-        transform.Rotate(Vector3.up, Horizontal * rotspeed);
+        if (direction.magnitude >= 0.1f)
+        {
+            float targetangle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg+cam.eulerAngles.y;
+            float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetangle, ref turnSmoothVelocity,turnSmoothTime);
+            transform.rotation = Quaternion.Euler(0f, targetangle, 0f);
+            Vector3 moveDir = Quaternion.Euler(0f, targetangle, 0f) * Vector3.forward;
+            character.Move(moveDir.normalized * speed * Time.deltaTime);
+        }
 
-     
-            //if (Input.GetKeyDown(KeyCode.Space))
-            //{
-              //  var jump = transform.up * jumpspeed *Horizontal* Time.deltaTime;
-               // controller.Move(jump);
-            //}
-        
+
     }
 }

@@ -5,21 +5,24 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/panel/start.unity
     guid: 9796e40d90d3c6042a4fd4995c0134e2
   - enabled: 1
-    path: Assets/Scenes/booktest.unity
-    guid: 4883aea41cefcb94f8bd1a6215d580eb
+    path: Assets/Scenes/panel/credit.unity
+    guid: 7a911cf384fe3c545bf524f5b3a0c704
+  - enabled: 1
+    path: Assets/Scenes/panel/how to play.unity
+    guid: a74446308d636d94ebb211ec09936b0e
+  - enabled: 1
+    path: Assets/Scenes/panel/story.unity
+    guid: 6918bd24e994956479353e4a33cc445c
+  - enabled: 1
+    path: Assets/Scenes/panel/black.unity
+    guid: 038d929143269e448b8e9aa43a4a34b5
   - enabled: 1
     path: Assets/Scenes/1f.unity
     guid: e740981b2fa576942a9a911aaa9ab261
-  - enabled: 1
-    path: Assets/Scenes/2f corridor.unity
-    guid: 30787b3a7b01f1b4d845a6c34de6f7ef
   - enabled: 1
     path: Assets/Scenes/room1.unity
     guid: cde145f9686b6f947ae508d117ee876a
@@ -27,33 +30,39 @@ EditorBuildSettings:
     path: Assets/Scenes/room2.unity
     guid: a9c69f6720dd3b8418c88ce841692429
   - enabled: 1
-    path: Assets/Scenes/panel/how to play.unity
-    guid: a74446308d636d94ebb211ec09936b0e
-  - enabled: 1
     path: Assets/Scenes/room3.unity
     guid: 1e6535d93ea61164ea50731b6b542ed3
   - enabled: 1
     path: Assets/Scenes/room4.unity
     guid: 941b3765ab453ba4f88350dcb9828b54
   - enabled: 1
-    path: Assets/Scenes/room5.unity
+    path: Assets/Scenes/2f/room5.unity
     guid: 4a2d1ae659d63ee438ec39523d368127
   - enabled: 1
-    path: Assets/Scenes/room6-1.unity
+    path: Assets/Scenes/2f/room6-1.unity
     guid: e68b278321c9c8048922e73a0796592a
   - enabled: 1
-    path: Assets/Scenes/room6-2.unity
+    path: Assets/Scenes/2f/room6-2.unity
     guid: 2c9514ba471e30c49831846179e259ca
   - enabled: 1
-    path: Assets/Scenes/room7.unity
+    path: Assets/Scenes/2f/room7.unity
     guid: 02fab1fc3e17c594ea0b2d9a1eae3a7e
   - enabled: 1
-    path: Assets/Scenes/room8.unity
+    path: Assets/Scenes/2f/room8.unity
     guid: 6bf070a088fb5164d92de2136a8ec501
   - enabled: 1
-    path: Assets/Scenes/panel/credit.unity
-    guid: 7a911cf384fe3c545bf524f5b3a0c704
+    path: Assets/Scenes/panel/final.unity
+    guid: 7f9c9188e2f1c3745baacf4fe559fcf3
   - enabled: 1
-    path: Assets/Scenes/panel/story.unity
-    guid: 6918bd24e994956479353e4a33cc445c
+    path: Assets/Scenes/2f/booktest.unity
+    guid: 4883aea41cefcb94f8bd1a6215d580eb
+  - enabled: 1
+    path: Assets/Scenes/2f/2f corridor.unity
+    guid: 30787b3a7b01f1b4d845a6c34de6f7ef
+  - enabled: 1
+    path: Assets/Scenes/2f/r2.unity
+    guid: 6877928b014a07942a2be93c36ab4446
+  - enabled: 1
+    path: Assets/Scenes/2f/r1.unity
+    guid: c9fa88258b8cfa9418719af032f28184
   m_configObjects: {}

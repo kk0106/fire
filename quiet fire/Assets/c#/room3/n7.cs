@@ -35,7 +35,7 @@ public class n7 : MonoBehaviour
     }
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.tag == "fire" && a == 1)
+        if (other.gameObject.tag == "1" && a == 1)
         {
             wine.SetActive(false);
           light.SetActive(true);

@@ -23,6 +23,7 @@ public class uicontorl : MonoBehaviour
     public void start()
     {
         SceneManager.LoadScene("how to play");
+        value.clear = 0;
     }
     public void credit()
     {
@@ -31,11 +32,22 @@ public class uicontorl : MonoBehaviour
     public void play()
     {
         SceneManager.LoadScene("story");
+        value.clear = 0;
     }
 
     public void playgame()
     {
-        SceneManager.LoadScene("1f");
+        SceneManager.LoadScene("black");
     }
-   
+   public void back()
+    {
+        SceneManager.LoadScene("start");
+        value.clear = 0;
+    }
+    public void menu()
+    {
+        SceneManager.LoadScene("start");
+        value.clear = 0;
+    }
+  
 }

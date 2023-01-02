@@ -18,7 +18,7 @@ public class glass : MonoBehaviour
     }
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.tag == "fire")
+        if (other.gameObject.tag == "1")
         {
             pointlight.SetActive(true);
         }   

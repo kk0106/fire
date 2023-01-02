@@ -17,6 +17,7 @@ TagManager:
   - l4
   - room1
   - doorroom4
+  - ghost
   layers:
   - Default
   - TransparentFX
@@ -25,7 +26,7 @@ TagManager:
   - Water
   - UI
   - light
-  - 
+  - background
   - 
   - 
   - 

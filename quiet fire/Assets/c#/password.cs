@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class password : MonoBehaviour
 {
+
     public string curpassword = "12345";
     public string input;
 
@@ -11,6 +12,8 @@ public class password : MonoBehaviour
     public bool opendoor;
     public bool keypadscreen;
     public Transform doorhinge;
+    public GameObject tex;
+    public GameObject box;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,10 +27,16 @@ public class password : MonoBehaviour
         {
             opendoor = true;
         }
+        else
+        {
+            print("none");
+        }
         if (opendoor == true)
         {
 
             Destroy(this.gameObject);
+            Destroy(tex);
+            Destroy(box);
         
         }
     }
@@ -52,6 +61,15 @@ public class password : MonoBehaviour
                 {
                     keypadscreen = true;
                     ontrigger = false;
+                }
+               
+            }
+            else
+            {
+                if (Input.GetKeyDown(KeyCode.T))
+                {
+                    keypadscreen = false;
+                    ontrigger = true;
                 }
             }
 
@@ -104,10 +122,12 @@ public class password : MonoBehaviour
 
                     input = input + "9";
                 }
-                if (GUI.Button(new Rect(350, 110, 100, 100), "0"))
+                if (GUI.Button(new Rect(50, 350, 200, 100), "reset"))
                 {
-                    input = input + "0";
+                    
+
                 }
+                
             }
         }
     }

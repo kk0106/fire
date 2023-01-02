@@ -18,7 +18,7 @@ public class aa : MonoBehaviour
     }
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.tag == "fire")
+        if (other.gameObject.tag == "1")
         {
             plight.SetActive(true);
         }

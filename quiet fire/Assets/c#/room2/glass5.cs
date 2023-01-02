@@ -31,7 +31,7 @@ public class glass5 : MonoBehaviour
     }
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.tag == "fire" && a == 1)
+        if (other.gameObject.tag == "1" && a == 1)
         {
             pointlight4.SetActive(true);
             // door2.SetActive(true);
